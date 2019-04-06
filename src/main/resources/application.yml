@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: develop
+  datasource:
+    url: jdbc:mysql://192.168.99.100:3306/db_customer
+    username: root
+    password: root
+server:
+  address: localhost
+  port: 8080
