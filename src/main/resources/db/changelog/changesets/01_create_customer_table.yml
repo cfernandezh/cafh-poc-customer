@@ -16,7 +16,7 @@ databaseChangeLog:
             columns:
               - column:
                   name: id
-                  type: uuid
+                  type: varchar(255)
                   constraints:
                     primaryKey: true
                     nullable: false
@@ -37,7 +37,7 @@ databaseChangeLog:
                     nullable: false
               - column:
                   name: date_birth
-                  type: long
+                  type: bigint
                   constraints:
                     nullable: false
               - column:

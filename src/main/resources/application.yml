@@ -5,6 +5,10 @@ spring:
     url: jdbc:mysql://192.168.99.100:3306/db_customer
     username: root
     password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
   liquibase:
     change-log: classpath:db/changelog/liquibase-changelog.yaml
 
