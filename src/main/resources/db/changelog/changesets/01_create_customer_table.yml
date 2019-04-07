@@ -1,0 +1,57 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: cafh-poc-customer
+      comment: 'Creation of the table customer'
+      failOnError: true
+      preConditions:
+        not:
+          tableExists:
+            tableName: customer
+        onFail: MARK_RAN
+      changes:
+        - createTable:
+            tableName: customer
+            remarks: "A table to contain all customers"
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: int
+                  constraints:
+                    nullable: false
+              - column:
+                  name: date_birth
+                  type: long
+                  constraints:
+                    nullable: false
+              - column:
+                  name: enabled
+                  type: boolean
+                  defaultValueBoolean: 'true'
+                  constraints:
+                    nullable: false
+              - column:
+                  name: creation_time
+                  type: datetime
+                  defaultValueDate: ${now}
+                  constraints:
+                    nullable: false
+              - column:
+                  name: update_time
+                  type: datetime
