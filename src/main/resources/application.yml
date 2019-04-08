@@ -2,7 +2,7 @@ spring:
   profiles:
     active: develop
   datasource:
-    url: jdbc:mysql://192.168.99.100:3306/db_customer
+    url: jdbc:mysql://b0611a74eabbf7:6ab582ae@us-cdbr-iron-east-03.cleardb.net/heroku_35f501fe85bbecb?reconnect=true/
     username: root
     password: root
   jpa:
