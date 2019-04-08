@@ -15,3 +15,8 @@ spring:
 server:
   address: localhost
   port: 8080
+
+customer:
+  date-format: dd/MM/yyyy
+  life-expectancy: 75
+  min-value-statistics: 2

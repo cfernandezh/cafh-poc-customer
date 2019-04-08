@@ -15,4 +15,6 @@ public class Customer {
     private Integer age;
 
     private Long dateOfBirth;
+
+    private Long estimatedDeathDate;
 }
