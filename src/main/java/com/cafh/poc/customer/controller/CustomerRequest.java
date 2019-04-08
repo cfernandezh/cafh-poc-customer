@@ -1,6 +1,7 @@
 package com.cafh.poc.customer.controller;
 
 import com.cafh.poc.customer.util.ValidAge;
+import lombok.Builder;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
@@ -9,6 +10,7 @@ import javax.validation.constraints.Pattern;
 
 @ValidAge
 @Data
+@Builder
 public class CustomerRequest {
 
     @NotNull

@@ -1,7 +1,5 @@
 package com.cafh.poc.customer.util;
 
-import com.cafh.poc.customer.config.ApplicationProperties;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
