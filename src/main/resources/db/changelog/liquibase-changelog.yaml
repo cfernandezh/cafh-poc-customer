@@ -2,16 +2,16 @@ databaseChangeLog:
   - logicalFilePath: db/changelog/liquibase-changelog.yaml
   - preConditions:
       dbms:
-        type: mariadb
+        type: mysql
       onFail: HALT
   - property:
       name: now
       value: now()
-      dbms: mariadb
+      dbms: mysql
   - property:
       name: uuid_function
       value: uuid()
-      dbms: mariadb
+      dbms: mysql
   - include:
       relativeToChangelogFile: true
       file: liquibase-changeset-execution.yml
