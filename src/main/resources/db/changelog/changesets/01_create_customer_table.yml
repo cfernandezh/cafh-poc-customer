@@ -46,12 +46,3 @@ databaseChangeLog:
                   defaultValueBoolean: 'true'
                   constraints:
                     nullable: false
-              - column:
-                  name: creation_time
-                  type: datetime
-                  defaultValueDate: ${now}
-                  constraints:
-                    nullable: false
-              - column:
-                  name: update_time
-                  type: datetime
