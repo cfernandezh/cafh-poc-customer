@@ -1,0 +1,1 @@
+web: java -jar build/libs/cafh-poc-customer-0.0.1-SNAPSHOT.jar
