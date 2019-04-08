@@ -12,10 +12,6 @@ spring:
   liquibase:
     change-log: classpath:db/changelog/liquibase-changelog.yaml
 
-server:
-  address: localhost
-  port: 8080
-
 customer:
   date-format: dd/MM/yyyy
   life-expectancy: 75
