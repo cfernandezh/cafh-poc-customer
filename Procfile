@@ -1,1 +1,1 @@
-web: java -jar build/libs/cafh-poc-customer-1.0-SNAPSHOT.jar
+web: java -Dserver.port=$PORT -jar build/libs/cafh-poc-customer-1.0-SNAPSHOT.jar
